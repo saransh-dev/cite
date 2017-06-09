@@ -1,0 +1,153 @@
+.wrapper-content {
+  padding: 20px 10px 40px;
+}
+
+.contact-box {
+    border: 1px solid $grey_bdr_light;
+    @include border-radius(4px);
+    background: #fff;
+    padding: 20px;
+    @include box-shadow(0px, 1px, 7px, rgba(0,0,0,0.10));
+    margin-bottom: 20px;
+
+
+    img {
+      max-width: 80px;
+    }
+}
+
+
+.contact-box.center-version > a {
+  display: block;
+  background-color: #ffffff;
+  padding: 0px;
+  text-align: center;
+}
+
+.contact-box.center-version > a img {
+}
+
+.contact-box.center-version h3 {
+  font-size: 16px;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-box.center-version a {
+  color: #676a6c;
+}
+
+.contact-box.center-version a h3 {
+  color: #676a6c;
+}
+
+.contact-box.center-version h3 strong {
+  font-weight: 500;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.contact-box .m-b-xs {
+  margin-bottom: 5px;
+}
+
+.contact-box .font-bold {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.contact-box.center-version address {
+  margin-bottom: 0;
+}
+
+.contact-box .m-t-md {
+  margin-top: 20px;
+}
+
+.contact-box .bio {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 13px;
+
+  strong {
+    font-weight: 500;
+    display: block;
+  }
+}
+
+.contact-box .contact-box-footer {
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 14px;
+
+  i {
+    font-size: 20px;
+  }
+}
+
+.contact-box .m-t-xs {
+  margin-top: 5px;
+}
+
+.contact-box .btn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+.contact-box .btn {
+  @include border-radius(4px);
+  border: 1px solid $grey_bdr;
+  text-align: center;
+  padding: 8px 12px;
+
+  span {
+    display: none;
+  }
+
+  i {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  &.active {
+    background: $orange;
+    color: #fff;
+  }
+
+}
+
+.contact-box.btn {
+  display: inline-block;
+}
+
+.users-directory-load-more {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  clear: both;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+
+  span.btn.btn-ghost {
+    color: $orange;
+    border-color: $orange;
+
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+
+}

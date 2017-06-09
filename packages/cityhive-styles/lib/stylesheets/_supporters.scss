@@ -1,0 +1,26 @@
+.supporters {
+  margin-top: 100px;
+  text-align: center;
+
+  p {
+    font-size: 12px;
+    font-weight: 200;
+    color: $white;
+    letter-spacing: 0.5px;
+  }
+
+  li {
+
+    display: inline-block;
+    margin: 0 14px;
+
+    a {
+      display: inline-block;
+      background: #525252;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      text-indent: -9999px;
+    }
+  }
+}

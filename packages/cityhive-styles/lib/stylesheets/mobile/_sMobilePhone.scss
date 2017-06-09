@@ -1,0 +1,153 @@
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape *
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+
+}*/
+
+/* Portrait Iphone 5*/
+@media only screen
+and (min-width: 320px)
+and (max-width: 568px)
+//and (max-height: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+
+
+  @-ms-viewport { width: 320px; }
+
+
+
+  header>div.row{
+    display: inline-flex;
+
+  }
+
+
+  header.header .logo {
+    margin: 18px 18px 18px 10px;
+  }
+
+
+  header>div>div:last-child{
+    padding: 0 0 0 0;
+  }
+
+  header.header .profile {
+    margin-top: 27px;
+    margin-right: 35px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+    @-ms-viewport { width: 360px; }
+
+  @if(device-width=320px) {
+
+    header > div > div:last-child { //Profile dir
+      padding: 0 0 0 0;
+      position: relative;
+      left: 4%;
+      //right: 3%;
+      //left: 0px;
+    }
+
+    header > div > div:nth-child(2) { //Logo dir
+      position: relative;
+      //left: 20px;
+      left: 5%;
+      right: 5%;
+      padding-left: 0px;
+      padding-right: 5%;
+    }
+
+    header > div > div:first-child { //Main-menu triger dir
+      padding-left: 0px;
+      padding-right: 0px;
+      left: -20px;
+
+    }
+  }@else {
+      header > div > div:last-child { //Profile dir
+        padding: 0 0 0 0;
+        position: relative;
+        left: 12%;
+        //right: 3%;
+        //left: 0px;
+      }
+
+      header > div > div:nth-child(2) { //Logo dir
+        position: relative;
+        //left: 20px;
+        left: 5%;
+        right: 5%;
+        padding-left: 0px;
+        padding-right: 5%;
+      }
+
+      header > div > div:first-child { //Main-menu triger dir
+        padding-left: 0px;
+        padding-right: 0px;
+        left: -20px;
+    }
+  }
+  .main>.content {
+    padding: 15px 0px;
+  }
+
+  [class*="top-bar"]{
+    display: none;
+  }
+
+  [class*="container"]{
+    padding: 0;
+    margin: 0;}
+
+
+  .main-menu .links {
+    padding: 10px 0px 50px 25px;
+    background: #f5f5f5;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+  .main {
+    padding: 20px;
+    // z-index: -1;
+    position: relative;
+  }
+
+  .main-menu .row-wrapper {
+    background: rgba(64, 63, 63, 0.9);
+    padding-bottom: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+  }
+
+  div>ul{
+    padding-left: 10px;
+  }
+
+}
+
+
+/* Landscape Iphone 5
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+*/
+
+/*-- end  iphone 5--*/

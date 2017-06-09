@@ -1,0 +1,54 @@
+body{
+    .editor{
+        &--status{
+            .fr-toolbar.fr-bottom{
+                box-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 1px 1px 1px rgba(0, 0, 0, .16);
+                .fr-separator.fr-hs {
+                    height: 0px;
+                }
+            }
+            .fr-toolbar{
+                border-top: none!important;
+                // box-shadow: none;
+                // background: #fff;
+                background: rgba(233,231,231,1)!important;
+                box-shadow: none!important;
+                border-bottom-left-radius: 6px!important;
+                border-bottom-right-radius: 6px!important;
+                border-top-left-radius: 0!important;
+                border-top-right-radius: 0!important;
+            }
+            .fr-wrapper {
+              background: rgba(233,231,231,1)!important;
+              color: black;
+              box-shadow: none!important;
+              border-top-left-radius: 6px!important;
+              border-top-right-radius: 6px!important;
+              border-bottom-left-radius: 0!important;
+              border-bottom-right-radius: 0!important;
+            }
+
+        }
+    }
+
+    .fr-popup{
+        &.fr-above{
+            border-bottom: 5px solid transparent;
+        }
+        &.fr-desktop{
+            &.fr-above{
+                &.fr-active{
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // .fr-toolbar.fr-desktop.fr-bottom.fr-basic.fr-sticky {
+    //     display: flex;
+    //     justify-content: flex-end;
+    // }
+
+}

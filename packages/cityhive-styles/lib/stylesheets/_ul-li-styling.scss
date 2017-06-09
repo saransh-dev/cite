@@ -1,0 +1,109 @@
+.ul-menu--with-icons {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+
+	i {
+		font-size: 26px;
+		position: relative;
+		top: 3px;
+	}
+
+	li {
+		margin-bottom: 10px;
+	}
+
+	li.link-disabled {
+		opacity: .5;
+		> span {
+			display: inline-block;
+			min-width: 32px;
+			}	
+	}
+
+
+	li.link-false {
+
+		cursor: pointer;
+		@include transition(all 0.3s linear);
+		> span {
+			display: inline-block;
+			min-width: 32px;
+			}	
+		&:hover{
+			color: $orange;
+		}
+	}	
+
+
+	li.link-false.link-delete-account {
+		border-top: 1px solid #fff;
+		padding-top: 10px;
+	}
+
+	a {
+	
+	> span {
+		display: inline-block;
+		min-width: 32px;
+		}	
+	}
+
+}
+
+.ul-menu--light {
+
+	li, a {
+		color: $grey_light;
+	}
+
+	a.active {
+		color: $orange;
+	}
+
+	a {
+		&:hover {
+			color: $orange;
+		}
+	}
+
+}
+
+.ul-menu--with-ticks {
+
+	padding: 0;
+
+	li {
+		position: relative;
+		margin-bottom: 7px;
+		padding-right: 20px;
+
+		&:before{
+			content: "✓";
+			margin-right: 10px;
+			color: $orange;
+			@include position(absolute, 0 null null -20px);
+		}
+	}
+
+}
+
+.ul-menu--with-circles {
+
+	padding: 0;
+
+	li {
+		position: relative;
+		margin-bottom: 7px;
+		padding-right: 20px;
+
+		&:before{
+			content: "•";
+			margin-right: 10px;
+			color: $orange;
+			@include position(absolute, 0 null null -20px);
+		}
+	}
+
+}
+

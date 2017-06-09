@@ -1,0 +1,27 @@
+.container.verify-email {
+  background: #fff;
+
+  .city-hive-verify-email {
+    min-height: 750px;
+    text-align: center;
+    padding-top: 150px;
+
+    p {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 25px;
+
+      span {
+        font-weight: 200;
+      }
+
+      .verify-email-status {
+        margin-left: 10px;
+        cursor: default;
+      }
+    }
+  }
+
+
+}

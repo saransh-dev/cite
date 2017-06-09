@@ -1,0 +1,141 @@
+form.accounts-ui {
+  width: 100%;
+
+  input {
+    width: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    background: $dark-grey;
+    text-align: center;
+    color: $white;
+    margin-bottom: 10px;
+
+    &:focus {
+      background: $dark-grey;
+      color: $white;
+    }
+  }
+
+  button.btn[type="submit"] {
+    width: 100%;
+    border: 0;
+    background: $orange;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+}
+
+form.accounts-ui input::-webkit-input-placeholder {
+  color: $white;
+}
+
+form.accounts-ui input:-moz-placeholder { /* Firefox 18- */
+  color: $white;
+}
+
+form.accounts-ui input::-moz-placeholder {  /* Firefox 19+ */
+  color: $white;
+}
+
+form.accounts-ui input:-ms-input-placeholder {
+  color: $white;
+}
+
+
+.select-style {
+    border: 1px solid #ccc;
+    width: 96%;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+}
+
+.profile-privacy-settings .select-style {
+    width: 100%;
+}
+
+.select-style:after {
+    content: "\f078";
+    display: block;
+    font-family: FontAwesome;
+    @include position(absolute, null 7px 7px null);
+    z-inde: 4;
+    font-size: 12px;
+    color: $background_lighter;
+    opacity: .6;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    border: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none !important;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+
+.select-style select:focus, .select-style select:active {
+    outline: none;
+}
+
+
+.sign-in form.accounts-ui input[type="text"], .sign-in form.accounts-ui input[type="password"], .sign-in form.accounts-ui input[type="email"] {
+    background: #fff;
+    color: $background_dark;
+}
+
+.sign-in .main .container.txt-col--light .buttons, .sign-up .main .container.txt-col--light .buttons {
+
+button {
+    margin-bottom: 10px;
+}
+
+a {
+    color: $orange;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+}
+
+.sign-in form, .sign-up form {
+
+    ::-webkit-input-placeholder {
+    color: $background_dark !important;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+   color: $background_dark !important;
+   opacity: 1;
+}
+
+::-moz-placeholder { 
+    color: $background_dark !important;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {  
+    color: $background_dark !important;
+    opacity: 1;
+}
+
+}
+body {
+    .Select-clear {
+        display: none;
+    }
+}
+

@@ -1,0 +1,162 @@
+:invalid {
+  box-shadow: none;
+}
+
+:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow:none;
+}
+
+.forgotten-password {
+
+  .spray-mask,
+  .spray-triangle,
+  .spray-bg {
+    display: none;
+  }
+}
+
+.forgotten-password .city-hive-forgotten-password {
+  padding-top: 60px;
+  padding-bottom: 250px;
+}
+
+.container.sign-in .city-hive-sign-in {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.container.sign-in .sign-in > h5,
+.container.sign-up .sign-in > h2.page-title {
+  display: none;
+}
+
+select
+{
+  -webkit-appearance:none;
+  height: 50px;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background-image: url("/img/arrow-down.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: 98% 50% !important;
+   background-size: 12px 7px !important;
+   cursor: pointer;
+}
+
+.city-hive-sign-up,
+.city-hive-sign-in,
+.city-hive-forgotten-password,
+.city-hive-reset-password {
+
+  .form-title {
+    font-size: 18px;
+    color: #fff !important;
+    margin-bottom: 35px;
+  }
+
+  button.linkedin {
+    width: 100%;
+    line-height: 46px;
+    color: #616159;
+    background: transparent;
+    border: 1px solid #d6d6d5;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+
+    img {
+      width: 100%;
+      max-width: 80px;
+      position: relative;
+      top: -2px;
+      margin-left: 5px;
+    }
+  }
+
+  p.form-caption {
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 27px;
+  }
+
+  .flash-messages {
+    margin: 0;
+  }
+
+  form {
+
+    p {
+      color: #fff !important;
+      text-align: center;
+
+      span {
+        color: #fff !important;
+      }
+
+      &.note {
+        font-size: 14px;
+        margin: 15px 0 25px;
+
+        a {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+
+      &.switch-to-sign-in {
+        color: #4c4c4c;
+        font-size: 19px;
+        margin-top: 10px;
+
+        a {
+          color: #f89921 !important;
+        }
+      }
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      background: #f5f5f5;
+      border: 0;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      border-radius: 7px;
+      font-size: 17px;
+      color: #5f5f5f;
+      margin-bottom: 12px;
+    }
+
+    input[type="submit"] {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      background: #f89921;
+      font-size: 20px;
+      color: #534838;
+    }
+
+    .work-email input {
+      margin-bottom: 0;
+    }
+
+    .work-email small {
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.city-hive-forgotten-password,
+.city-hive-reset-password,
+.city-hive-verify-email {
+  width: 50%;
+  margin: 0 auto;
+}

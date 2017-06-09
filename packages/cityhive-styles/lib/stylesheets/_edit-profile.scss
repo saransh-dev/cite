@@ -1,0 +1,59 @@
+.edit-user-profile {
+
+  .fieldset-caption {
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+
+  label {
+    font-weight: 500;
+  }
+
+  .col-sm-9 label {
+    font-weight: 200;
+    margin-right: 20px;
+    margin-top: 7px;
+  }
+
+  .display-name {
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+
+    .row {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .three-words {
+
+    input {
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+.users-edit-form .control-label strong {
+  color: #403f3f;
+  font-weight: 400;
+}
+
+.users-edit-form .upload-field a {
+  color: #f89921;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    color: #f89921;
+  }
+}
+
+.users-edit-form .input-profile\.cv .upload-field .dropzone-base {
+  padding: 10px;
+  width: 35%;
+}

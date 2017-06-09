@@ -1,0 +1,115 @@
+.main-container.about {
+
+.top {
+	
+	position: relative;
+	padding-bottom: 200px;
+
+	img {
+		@include position(absolute, null 0 0 null);
+		z-index: 7;
+	}
+
+  img.about-mobile {
+    display: none;
+  }
+
+}
+
+.tri {
+  display: none;
+}
+
+
+.middle {
+
+
+	position: relative;
+	padding-top: 120px;
+
+	> img {
+		@include position(absolute, -90px 180px null null);
+		z-index: 6;
+	}
+}
+
+
+.contact {
+	margin-top: -200px;
+  position: relative;
+  z-index: 99;
+
+  a {
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+
+
+.hex-about {
+  position: relative;
+  width: 380px; 
+  height: 219.39px;
+  background-color: #f89921;
+  margin: 101.04px 0 0;
+  top: -400px;
+
+  small {
+  	display: block;
+  	margin: 5px 30px;
+  	text-align: center;
+  	clear: both;
+  }
+}
+
+.hex-about:before,
+.hex-about:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 190px solid transparent;
+  border-right: 190px solid transparent;
+}
+
+.hex-about:before {
+  bottom: 100%;
+  border-bottom: 109.70px solid #f89921;
+}
+
+.hex-about:after {
+  top: 100%;
+  width: 0;
+  border-top: 109.70px solid #f89921;
+}
+
+  .hex-about div p {
+    display: block;
+    margin: 5px 30px;
+    text-align: center;
+    clear: both;
+    font-size: 80%;
+    font-weight: normal;
+  }
+
+  @include mq($min-width:771px, $max-width: 1030px) {
+
+     .hex-about .page-title {
+       margin-bottom: 25px;
+       top: -21px;
+     }
+
+   }
+
+  @include mq($min-width: 1031px) {
+
+    .hex-about .page-title {
+      margin-bottom: 38px;
+      top: -15px
+    }
+
+  }
+
+}

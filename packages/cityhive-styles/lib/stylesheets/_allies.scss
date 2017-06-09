@@ -1,0 +1,91 @@
+.logos-block {
+
+	margin: 50px auto;
+	max-width: 400px;
+	position: relative;
+
+	&:after {
+		@include position(absolute, 0 null 0 50%);
+		content: "";
+		display: block;
+		width: 1px;
+		background: #fff;
+		background: rgba(255,255,255, .3);
+		height: 100%;
+	}
+
+	td {
+		padding: 30px;
+		text-align: center;
+		width: 200px;
+	}
+
+	tr:first-of-type {
+		td {
+			border-bottom: 1px solid #fff;
+			border-bottom: 1px solid rgba(255,255,255,.2);
+		}
+	}
+
+	img {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 80%;
+		cursor: pointer;
+	}
+}
+
+.allies .hex {
+	h5 {
+		position: relative;
+		top: 35px;
+	}
+}
+
+.allies {
+
+	p.txt-orange {
+		color: $orange !important;
+	}
+
+}
+
+.active .allies .navbar {
+	z-index: 5;
+}
+
+
+.allies .logo-overlay {
+	@include position(fixed, 0 0 0 0);
+	width: 100%;
+	height: 100%;
+	background:$background_lighter;
+	z-index: 10000000;
+	padding: 50px;
+	@include transition(all 0.3s linear);
+	display: none;
+	opacity: 0;
+
+	&.active {
+		display: block;
+		opacity: 1;
+	}
+
+	img {
+		display: block;
+		margin: 0 0 50px;
+	}
+
+	h5 {
+		margin-bottom: 30px;
+	}
+
+	a {
+		color: $orange;
+	}
+
+
+	.close {
+		color: #fff;
+	}
+}

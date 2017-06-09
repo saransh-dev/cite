@@ -1,0 +1,103 @@
+.footer {
+
+  background: $background_dark;
+  padding: 30px 0;
+  font-size: 13px;
+  position: relative;
+  z-index: 12;
+  color: #fff;
+
+  p, span, li, a {
+    color : #fff;
+  }
+
+  p, span {
+    font-size: 13px;
+  }
+
+  a:hover {
+    color: $orange;
+  }
+
+  .logos {
+    display: inline;
+    margin-left: 30px;
+
+    img {
+      margin-right: 30px;
+      display: inline-block;
+    }
+  }
+
+  p {
+    font-size: 13px;
+    font-weight: 200;
+    display: inline;
+    color: $white;
+
+    span {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  .footer-column-one {
+    text-align: center;
+
+    ul {
+      margin: 0; 
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  }
+
+  .footer-column-two {
+    img {
+      max-width: 60px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .footer-column-three {
+  
+
+    span, ul, li {
+      display: inline-block;
+      vertical-align: middle;
+
+      i {
+        font-size: 30px;
+        margin: 0 5px;
+      }
+    }
+
+    ul {
+      margin: 0 0 0 10px;
+      padding: 0;
+    }
+
+  }
+
+}
+
+
+
+@include mq($max-width:770px) {
+
+
+  .footer {
+
+    .logos, p {
+      display: block;
+      width: auto;
+      clear: both;
+      text-align: center;
+    }
+  }
+
+}

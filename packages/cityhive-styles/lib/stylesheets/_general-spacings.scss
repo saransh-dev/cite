@@ -1,0 +1,103 @@
+.no-margin {
+	margin: 0 !important;
+}
+
+.no-margin-top {
+	margin-top: 0;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+.margin-bot-sm {
+	margin-bottom: 15px;
+}
+
+.margin-bot-l {
+	margin-bottom: 30px;
+}
+
+.margin-bot-xl {
+	margin-bottom: 50px;
+}
+
+.margin-top-sm {
+	margin-top: 15px;
+}
+
+.margin-top-l {
+	margin-top: 30px;
+}
+
+.margin-top-xl {
+	margin-top: 50px;
+}
+
+.padding-all-sm {
+	padding: 15px;
+}
+
+.padding-all-m {
+	padding: 25px;
+}
+
+
+.padding-all-l {
+	padding: 50px;
+}
+
+.padding-top-sm {
+	padding-top: 15px;
+}
+
+.padding-top-l {
+	padding-top: 30px;
+}
+
+.padding-top-xl {
+	padding-top: 50px;
+}
+
+.padding-bot-sm {
+	padding-bottom: 15px;
+}
+
+.padding-bot-l {
+	padding-bottom: 30px;
+}
+
+.padding-bot-xl {
+	padding-bottom: 50px;
+}
+
+
+.limited-width {
+	
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.limited-width-medium {
+
+	max-width: 835px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.limited-width-small {
+	
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.center-item {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,133 @@
+$hexagon-orange: #f89921;
+$hexagon-red: #f7264d;
+$hexagon-cyan: #05bf9e;
+$hexagon-yellow: #ffcc00;
+$hexagon-green: #4d9d06;
+
+.hexagon {
+  position: relative;
+  width: 58px;
+  height: 33.49px;
+  margin: 16.74px 0 55px 16.74px;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 41.01px;
+    height: 41.01px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 4.4939px;
+  }
+
+  &:before {
+    top: -20.5061px;
+  }
+
+  &:after {
+    bottom: -20.5061px;
+  }
+}
+
+.hexagon-orange {
+  background-color: transparent;
+  border-left: solid 4px $hexagon-orange;
+  border-right: solid 4px $hexagon-orange;
+
+  &:before {
+    border-top: solid 5.6569px $hexagon-orange;
+    border-right: solid 5.6569px $hexagon-orange;
+  }
+
+  &:after {
+    border-bottom: solid 5.6569px $hexagon-orange;
+    border-left: solid 5.6569px $hexagon-orange;
+  }
+}
+
+.hexagon-orange.active {
+  background-color: $hexagon-orange;
+}
+
+.hexagon-red {
+  background-color: transparent;
+  border-left: solid 4px $hexagon-red;
+  border-right: solid 4px $hexagon-red;
+
+  &:before {
+    border-top: solid 5.6569px $hexagon-red;
+    border-right: solid 5.6569px $hexagon-red;
+  }
+
+  &:after {
+    border-bottom: solid 5.6569px $hexagon-red;
+    border-left: solid 5.6569px $hexagon-red;
+  }
+}
+
+.hexagon-red.active {
+  background-color: $hexagon-red;
+}
+
+.hexagon-cyan {
+  background-color: transparent;
+  border-left: solid 4px $hexagon-cyan;
+  border-right: solid 4px $hexagon-cyan;
+
+  &:before {
+    border-top: solid 5.6569px $hexagon-cyan;
+    border-right: solid 5.6569px $hexagon-cyan;
+  }
+
+  &:after {
+    border-bottom: solid 5.6569px $hexagon-cyan;
+    border-left: solid 5.6569px $hexagon-cyan;
+  }
+}
+
+.hexagon-cyan.active {
+  background-color: $hexagon-cyan;
+}
+
+.hexagon-yellow {
+  background-color: transparent;
+  border-left: solid 4px $hexagon-yellow;
+  border-right: solid 4px $hexagon-yellow;
+
+  &:before {
+    border-top: solid 5.6569px $hexagon-yellow;
+    border-right: solid 5.6569px $hexagon-yellow;
+  }
+
+  &:after {
+    border-bottom: solid 5.6569px $hexagon-yellow;
+    border-left: solid 5.6569px $hexagon-yellow;
+  }
+}
+
+.hexagon-yellow.active {
+  background-color: $hexagon-yellow;
+}
+
+.hexagon-green {
+  background-color: transparent;
+  border-left: solid 4px $hexagon-green;
+  border-right: solid 4px $hexagon-green;
+
+  &:before {
+    border-top: solid 5.6569px $hexagon-green;
+    border-right: solid 5.6569px $hexagon-green;
+  }
+
+  &:after {
+    border-bottom: solid 5.6569px $hexagon-green;
+    border-left: solid 5.6569px $hexagon-green;
+  }
+}
+
+.hexagon-green.active {
+  background-color: $hexagon-green;
+}

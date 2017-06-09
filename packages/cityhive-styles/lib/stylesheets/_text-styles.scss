@@ -1,0 +1,137 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 30px;
+
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+h3,
+h4,
+h5, h6 {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $background_dark;
+}
+
+// h1, h2, h3, h4, h5, h6 {
+// 	color: $background_dark;
+// }
+
+strong {
+  font-weight: bold;
+}
+
+body, p, label {
+	color: $background_lighter;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.main .txt-col--light {
+	color: $white;
+
+  h1, h2, h3, h4, h5, h6, p, a {
+    color: $white;
+  }
+}
+
+.main .txt-orange {
+  color: $orange;
+
+  h1, h2, h3, h4, h5, h6, p, a, * {
+    color: $orange;
+  }
+}
+
+
+.txt-col--grey-light {
+  color: $light_grey_txt;
+}
+
+body, p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: $background-dark;
+}
+
+.txt-weight--light {
+	font-weight: 100;
+}
+
+.txt-size--small {
+	font-size: 0.6em;
+}
+
+.txt-section-title--no-border {
+	border: 0;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-left {
+  text-align: left;
+}
+.txt-center {
+  text-align: center;
+}
+
+.page-title {
+
+  position: relative;
+  margin: 0 auto 60px;
+  display: table;
+  clear: both;
+
+  &:after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: $white;
+    @include position(absolute, null null -30px 50%);
+    margin-left: -30px;
+  }
+
+}
+
+.main a {
+  color: $orange;
+}
+
+.margin {
+  &-bottom {
+    &-20 {
+      margin-bottom: 20px!important;
+    }
+  }
+  &-top {
+    &-10 {
+      margin-top: 10px;
+    }
+  }
+}

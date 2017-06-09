@@ -1,0 +1,232 @@
+
+
+body {
+  font-family: "omnes-pro",sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  color: $white;
+  background: $background_dark;
+  overflow-x: hidden;
+
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "trajan-pro-3", serif;
+}
+
+.container.main-container.dashboard h1, .container.main-container.dashboard h2, .container.main-container.dashboard h3, .container.main-container.dashboard h4, .container.main-container.dashboard h5, .container.main-container.dashboard h6, 
+.container.main-container.following h1, .container.main-container.following h2, .container.main-container.following h3, .container.main-container.following h4, .container.main-container.following h5, .container.main-container.following h6,
+.container.main-container.messages h1, .container.main-container.messages h2, .container.main-container.messages h3, .container.main-container.messages h4, .container.main-container.messages h5, .container.main-container.messages h6, 
+.container.main-container.directory h1, .container.main-container.directory h2, .container.main-container.directory h3, .container.main-container.directory h4, .container.main-container.directory h5, .container.main-container.directory h6,  
+.container.main-container.privacy-settings h1, .container.main-container.privacy-settings h2, .container.main-container.privacy-settings h3, .container.main-container.privacy-settings h4, .container.main-container.privacy-settings h5, .container.main-container.privacy-settings h6,  
+.dashboard-section .container.main-container h1, .dashboard-section .container.main-container h2, .dashboard-section .container.main-container h3, .dashboard-section .container.main-container h4, .dashboard-section .container.main-container h5, .dashboard-section .container.main-container h6
+{
+  font-family: "omnes-pro",sans-serif;
+}
+
+
+.spray-mask, .spray-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1200px;
+  display: none;
+}
+
+.spray-bg {
+  background: $orange;
+  z-index: 0;
+}
+
+.spray-mask {
+  z-index: 1;
+  background: url("/img/mask.png") no-repeat 0 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.spray-triangle {
+  position: fixed;
+  top: -450px;
+  left: 0px;
+  width: 300px;
+  height: 900px;
+  display: block;
+  z-index: 33;
+  background: $background_dark;
+  @include transform(rotate(60deg));
+}
+
+.main {
+  position: relative;
+  z-index: 5;
+  background: $background_lighter;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .content {
+    position: relative;
+    z-index: 35;
+  }
+}
+
+.user-dashboard-section .main {
+  padding-bottom: 0;
+}
+
+
+
+  .container {
+    max-width: 1920px;
+  }
+
+div.commentItem>p:first-child{
+  margin-bottom: 0px;
+  padding-left: 25px;
+
+}
+
+div.commentItem>div.commentText{
+  padding-left: 10px;
+}
+
+div.commentEvents>a:hover{
+  border: solid lightskyblue 1px;
+  background-color: lightskyblue;
+  color: white;
+  text-decoration: none;
+}
+
+div.commentEvents>a:visited {
+  border: solid lightskyblue 1px;
+  background-color: lightskyblue;
+  color: white;
+  text-decoration: none;
+}
+/*
+div.commentEvents>a.btn-link:active{
+   border: solid royalblue 1px;
+   background-color: royalblue;
+   color: white;
+   text-decoration: none;
+ }
+
+div.commentEvents>a.btn-link:visited{
+  border: solid royalblue 1px;
+  background-color: royalblue;
+  color: white;
+  text-decoration: none;
+}
+*/
+div.commentEvents>a{
+  border: solid lightskyblue 1px;
+ // position: relative;
+  /* float: inherit; */
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  padding-right: 15px;
+  margin-left: 90%;
+  //float: right;
+  width: 10%;
+  height: 5%;
+}
+
+div.commentEvents{
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+hr {
+  margin: 50px auto;
+}
+
+hr.orange {
+  border-color: $orange;
+}
+
+.home-loading {
+  display: none;
+}
+
+.homepage .home-loading {
+  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: $background_dark;
+  opacity: 1;
+  display: block;
+  z-index: 10000;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+
+  img {
+    max-width: 252px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -126px;
+    margin-top: -30px;
+  }
+
+  &.remove-opacity {
+    opacity: 0;
+  }
+}
+
+.dashboard-section .spray-bg, .dashboard-section  .spray-mask, .dashboard-section .spray-triangle,
+.homepage .spray-bg, .homepage  .spray-mask, .homepage .spray-triangle,
+.dashboard .spray-bg, .dashboard  .spray-mask, .dashboard  .spray-triangle,
+.directory .spray-bg, .directory  .spray-mask, .directory  .spray-triangle,
+.messages .spray-bg, .messages .spray-mask, .messages .spray-triangle,
+.following .spray-bg, .following .spray-mask, .following .spray-triangle,
+.privacy-settings .spray-bg, .privacy-settings .spray-mask, .privacy-settings .spray-triangle,
+.sign-in .spray-bg, .sign-in .spray-mask, .sign-in .spray-triangle, .sign-up .spray-bg, .sign-up .spray-mask, .sign-up .spray-triangle  {
+      display: none !important;
+    }
+
+
+
+@include mq($max-width:800px) {
+
+    .spray-bg, .spray-mask,.spray-triangle {
+      display: none;
+    }
+}
+
+
+.page-not-found {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 700px;
+  padding-top: 100px;
+
+  p {
+    margin-top: 25px;
+    color: #fff;
+    font-size: 25px;
+  }
+}

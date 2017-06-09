@@ -1,0 +1,101 @@
+############ Nova Core ############
+
+nova:core # do not remove!
+
+############ Optional Packages ############
+
+nova:settings
+nova:users
+nova:posts
+nova:comments
+#nova:newsletter
+nova:search
+nova:notifications
+#nova:getting-started
+nova:categories
+nova:forms
+nova:embedly
+nova:api
+nova:email
+nova:rss
+# nova:subscribe
+# nova:cloudinary
+
+############ Customizable Packages ############
+
+#nova:base-components
+#nova:base-styles
+#nova:base-routes
+nova:email-templates
+nova:i18n-en-us
+
+accounts-password@1.3.5
+# accounts-twitter
+# accounts-facebook
+
+############ Debug Packages ############
+
+nova:debug
+# nova:kadira
+
+############ Your Packages ############
+
+# my-custom-package
+
+
+############ CityHive ############
+cityhive:pages
+cityhive:admin
+cityhive:articles
+cityhive:journals
+cityhive:components
+cityhive:i18n-en-us
+cityhive:memberships
+cityhive:routes
+cityhive:admin-options
+cityhive:base-styles
+cityhive:accounts
+
+richsilv:owl-carousel
+fortawesome:fontawesome
+
+socialize:user-model
+socialize:friendships
+socialize:messaging
+socialize:follow
+
+momentjs:moment
+
+cityhive:dashboard-styles
+#tmeasday:publish-with-relations
+cityhive:status
+socialize:likeable
+cityhive:homepage-styles
+xavcz:nova-forms-upload
+socialize:feed
+wolves:bourbon
+
+#cityhive:chat
+#cityhive:messages
+
+mrt:modernizr-meteor
+
+mizzao:user-status
+patrickml:react-modal
+mrt:malihu-custom-scrollbar
+lawshe:full-page
+socialize:base-model
+aldeed:simple-schema
+socialize:commentable
+
+cityhive:user-blocking
+cityhive:email
+
+edgee:slingshot
+cityhive:cv-upload
+
+mrt:twit
+cityhive:tweets
+froala:editor
+http@1.2.12
+peerlibrary:xml2js

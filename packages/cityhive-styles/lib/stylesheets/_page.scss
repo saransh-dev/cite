@@ -1,0 +1,180 @@
+.color-orange{
+  color: $orange;
+}
+
+.orange-link{
+  a {
+    color: $orange!important;
+  }
+}
+
+.width{
+  &90{
+    width: 90%;
+    &.img-center{
+      margin: 0 5%;
+    }
+  }
+}
+
+.page-item {
+  color: $white;
+  clear: both;
+
+  .page-content {
+    clear: both;
+  }
+}
+
+.intro-image {
+  margin-top: 45px;
+  margin-bottom: 65px;
+}
+
+.lead-text {
+  font-size: 20px;
+  line-height: 27px;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.wifc, .wifc-pledge {
+
+
+  .page-title {
+    
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    span {
+      display: block;
+      clear: both;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+
+}
+
+.page-template-wifc {
+
+  img:first-of-type {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+}
+
+.page-template-charity {
+  h2 {
+    span {
+      display: block;
+      &.txt-small {
+        font-size: 20px;
+        margin-top: 5px;
+      }
+    }
+  }
+  .hex{
+    &.hex-orange{
+      margin: 50px auto 55px;
+      h5 {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+.page-template-wifc , .page-template-wifc-pledge, .main .page-template-charity {
+  // hr {
+  //   border-color: $orange;
+  // }
+
+  .txt-col--light p a, p a  {
+    color: $orange;
+  }
+
+  .ul-menu--with-circles {
+    padding-left: 40px;
+  }
+
+}
+
+.page-template-wifc-pledge {
+
+
+  .bev-pledge {
+
+    position:relative;
+
+    i {
+      @include position(absolute, 0 null null 0);
+      color: $orange;
+      font-size: 27px;
+      line-height: 1;
+      display: block;
+    }  
+
+    p  {
+      margin-left: 40px;
+    }
+
+    p:last-of-type {
+      margin-left: 0;
+
+    span {
+      color: $orange;
+      font-weight: bold;
+    }
+
+    }
+
+  }
+
+}
+
+.page-template-our-mission iframe {
+  border: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.page-template-our-mission .fluid-width-video-wrapper {
+  margin-top: 50px;
+}
+
+.page-template-charity {
+  img.left-aligned {
+    float: left;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+  img.right-aligned {
+    float: right;
+    margin-left: 30px;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .mob{
+    &-50pc{
+      width: 50%;
+      &-center{
+        margin: 0 25%;
+      }
+    }
+  }
+}

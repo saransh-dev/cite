@@ -1,0 +1,174 @@
+.homepage-carousel {
+  color: #fff;
+
+  h2.title,
+  .subtitle {
+    font-family: "trajan-pro-3",serif;
+    text-align: center;
+  }
+
+  h2.title:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: $white;
+    margin: 15px auto;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    width: 325px;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  .uppercase {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .owl-controls .owl-dots {
+    width: 100px;
+    float: right;
+
+    .owl-dot {
+
+      position: relative;
+      width: 58px;
+      height: 33.49px;
+      margin: 16.74px 0 55px 16.74px;
+      display: block;
+      //display: table;
+
+
+
+
+      span {
+        display: none;
+      }
+
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 41.01px;
+        height: 41.01px;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background-color: inherit;
+        left: 4.4939px;
+      }
+
+      &:before {
+        top: -20.5061px;
+      }
+
+      &:after {
+        bottom: -20.5061px;
+      }
+    }
+  }
+
+  .owl-controls .owl-dots .owl-dot:first-of-type {
+    background-color: transparent;
+    border-left: solid 4px $hexagon-orange;
+    border-right: solid 4px $hexagon-orange;
+
+    &:before {
+      border-top: solid 5.6569px $hexagon-orange;
+      border-right: solid 5.6569px $hexagon-orange;
+    }
+
+    &:after {
+      border-bottom: solid 5.6569px $hexagon-orange;
+      border-left: solid 5.6569px $hexagon-orange;
+    }
+  }
+
+  .owl-controls .owl-dots .owl-dot.active:first-of-type {
+    background-color: $hexagon-orange;
+  }
+
+  .owl-controls .owl-dots .owl-dot:nth-of-type(2) {
+    background-color: transparent;
+    border-left: solid 4px $hexagon-red;
+    border-right: solid 4px $hexagon-red;
+
+    &:before {
+      border-top: solid 5.6569px $hexagon-red;
+      border-right: solid 5.6569px $hexagon-red;
+    }
+
+    &:after {
+      border-bottom: solid 5.6569px $hexagon-red;
+      border-left: solid 5.6569px $hexagon-red;
+    }
+  }
+
+  .owl-controls .owl-dots .owl-dot.active:nth-of-type(2) {
+    background-color: $hexagon-red;
+  }
+
+  .owl-controls .owl-dots .owl-dot:nth-of-type(3) {
+    background-color: transparent;
+    border-left: solid 4px $hexagon-cyan;
+    border-right: solid 4px $hexagon-cyan;
+
+    &:before {
+      border-top: solid 5.6569px $hexagon-cyan;
+      border-right: solid 5.6569px $hexagon-cyan;
+    }
+
+    &:after {
+      border-bottom: solid 5.6569px $hexagon-cyan;
+      border-left: solid 5.6569px $hexagon-cyan;
+    }
+  }
+
+  .owl-controls .owl-dots .owl-dot.active:nth-of-type(3) {
+    background-color: $hexagon-cyan;
+  }
+
+  .owl-controls .owl-dots .owl-dot:nth-of-type(4) {
+    background-color: transparent;
+    border-left: solid 4px $hexagon-yellow;
+    border-right: solid 4px $hexagon-yellow;
+
+    &:before {
+      border-top: solid 5.6569px $hexagon-yellow;
+      border-right: solid 5.6569px $hexagon-yellow;
+    }
+
+    &:after {
+      border-bottom: solid 5.6569px $hexagon-yellow;
+      border-left: solid 5.6569px $hexagon-yellow;
+    }
+  }
+
+  .owl-controls .owl-dots .owl-dot.active:nth-of-type(4) {
+    background-color: $hexagon-yellow;
+  }
+
+  .owl-controls .owl-dots .owl-dot:nth-of-type(5) {
+    background-color: transparent;
+    border-left: solid 4px $hexagon-green;
+    border-right: solid 4px $hexagon-green;
+
+    &:before {
+      border-top: solid 5.6569px $hexagon-green;
+      border-right: solid 5.6569px $hexagon-green;
+    }
+
+    &:after {
+      border-bottom: solid 5.6569px $hexagon-green;
+      border-left: solid 5.6569px $hexagon-green;
+    }
+  }
+
+  .owl-controls .owl-dots .owl-dot.active:nth-of-type(5) {
+    background-color: $hexagon-green;
+  }
+}

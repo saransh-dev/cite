@@ -1,0 +1,109 @@
+.admin {
+  color: #fff;
+
+  .profile-sidebar-menu {
+    padding-top: 25px;
+
+    a {
+      color: #fff;
+
+      &.active {
+        color: #f89921;
+      }
+    }
+  }
+
+  .table thead th {
+    color: #403f3f;
+    padding: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-top: 0;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .table tbody td {
+    padding: 5px;
+    color: #403f3f;
+
+    &.delete {
+
+      p {
+        color: #f89921;
+        cursor: pointer;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .table tr:first-of-type td {
+    padding: 5px;
+  }
+
+  label[for="menu-include"] {
+    display: block;
+  }
+
+  select#menu-include {
+    padding-left: 10px;
+    width: 100px;
+  }
+
+  .articles-list,
+  .pages-list,
+  .options-list {
+    .modal-trigger p {
+      color: #f89921;
+      cursor: pointer;
+    }
+  }
+
+  .admin-edit-users .user-directory .breadcrumbs p,
+  .admin-edit-users .user-directory .breadcrumbs form {
+    display: inline;
+  }
+
+  .admin-edit-users .user-directory .breadcrumbs p {
+    margin-right: 25px;
+  }
+
+
+  .admin-edit-users .user-directory .breadcrumbs form input {
+    margin-left: 10px;
+  }
+
+  .admin-edit-users .user-directory .breadcrumbs form button {
+    margin-left: 10px;
+  }
+
+  .users-count {
+    float: right;
+  }
+
+}
+
+.create-page-form {
+
+  label[for="menu-include"] {
+    display: block;
+  }
+
+  select#menu-include {
+    padding-left: 10px;
+    width: 100px;
+  }
+
+}
+
+.modal-trigger {
+  span {
+    cursor: pointer;
+    color: #f89921;
+  }
+}

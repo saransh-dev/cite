@@ -1,0 +1,18 @@
+.sign-up-bar {
+  width: 100%;
+  background: $orange;
+  color: $white;
+  position: relative;
+  text-align: center;
+  padding: 5px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .members-count {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+}

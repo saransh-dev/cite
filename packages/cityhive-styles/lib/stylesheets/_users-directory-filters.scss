@@ -1,0 +1,127 @@
+.users-directory-filters {
+	font-size: 16px;
+	color: #363434;
+
+	.filter-top {
+		padding-bottom: 20px;
+
+		.filter-status {
+			float: left;
+			padding-top: 12px;
+		}
+
+		.summary p {
+			line-height: 22px;
+			margin-bottom: 0 !important;
+		}
+
+		.summary span {
+			font-weight: 500;
+		}
+
+		.toggle-filters {
+			cursor: pointer;
+			float: right;
+
+			.icon {
+				width: 47px;
+				height: 47px;
+				background: #f89921;
+				display: inline-block;
+				text-align: center;
+				line-height: 47px;
+				border-radius: 47px;
+				margin-left: 10px;
+				-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+				-moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+				box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+
+				i {
+					color: #fff;
+					font-size: 30px;
+					position: relative;
+					top: 5px;
+				}
+			}
+		}
+	}
+
+	form {
+		display: none;
+	}
+
+	&.initiated form {
+		display: block;
+	}
+
+	&.active form {
+		display: none;
+	}
+
+	label {
+		display: none;
+	}
+
+	input[type="text"] {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	input[type="submit"] {
+		width: 145px;
+		height: 34px;
+		line-height: 31px;
+		background: #f89921;
+		text-align: center;
+		border: 0;
+		color: #fff;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin: 0 auto;
+		font-size: 16px;
+		display: block;
+		clear: both;
+	}
+
+	select {
+		width: 100%;
+		margin-bottom: 10px;
+		padding: 7px 10px;
+		font-size: 1rem;
+		line-height: 18px;
+		color: #55595c;
+		background-color: #fff;
+		background-image: none;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		border-radius: 0.25rem;
+		height: 40px;
+	}
+
+	select:focus {
+		color: #55595c;
+		background-color: #fff;
+		border-color: #66afe9;
+		outline: none;
+	}
+
+}
+
+@media all and (max-width: 543px) {
+	.users-directory-filters select {
+		margin-bottom: 0;
+	}
+}
+
+.users-directory-filters select {
+	color: #9999a2;
+}
+
+.users-directory-filters option {
+	color: #55595c;
+}
+
+.users-directory-filters option:first-child {
+	color: #9999a2;
+}

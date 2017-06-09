@@ -1,0 +1,137 @@
+.hex {
+	text-align: center;
+	margin: 100px auto;
+	z-index: 8;
+
+	h3 {
+		line-height: 84px;
+	}
+}
+
+.membership .footer {
+	margin-top: 0;
+}
+
+hr.hr-hex {
+	margin: 0 auto;
+	position: relative;
+	top: -145px;
+	z-index: 6;
+}
+
+.row.with-hex {
+
+	p {
+		display: inline-block;
+		width: 50%;
+		margin-left: 20px;
+	}
+}
+
+.hex.hex-dark {
+	background: $background_dark;
+	margin-left: 0;
+	display: inline-block;
+
+	&:before{
+		border-bottom-color: $background_dark;
+	}
+	&:after {
+		border-top-color: $background_dark;
+	}
+}
+
+.hex.hex-orange {
+	background: $orange;
+	margin-left: 0;
+	display: inline-block;
+
+	&:before{
+		border-bottom-color: $orange;
+	}
+	&:after {
+		border-top-color: $orange;
+	}
+}
+
+.basic-membership-info {
+
+	.hex {
+
+		margin: 50px 0 30px;
+
+		h5 {
+			position: relative;
+			top: 15px;
+			&.small {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.individual-membership-info {
+
+	.hex {
+
+		margin: 50px 0 30px;
+
+		h5 {
+			position: relative;
+			top: 15px;
+		}
+	}
+}
+
+
+.corporate-membership-info {
+
+	p {
+		margin-top: 50px;
+	}
+
+	.hex {
+
+		margin: 50px 0 30px;
+
+		h5 {
+			position: relative;
+			top: 15px;
+		}
+	}
+}
+
+.hex-beta {
+	.beta-bee {
+		display: block;
+		width: 140px;
+		height: 97px;
+		background: url("/img/bee.png") no-repeat 0 0;
+		  mix-blend-mode: multiply;
+		  background-size: 140px 97px, cover;	
+		  @include position(absolute, -7px 5px null null);	
+		  z-index: 10;
+	}
+
+	h6 {
+		position: relative;
+		z-index: 15;
+		top: 30px;
+	}
+}
+
+
+@include mq($max-width:770px) {
+
+	.with-hex .hex {
+		margin: 60px auto;
+	}
+
+.bg-orange {
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+}
