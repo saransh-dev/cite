@@ -1,0 +1,59 @@
+{
+  "title": "City Hive",
+  "public": {
+    "title": "City Hive",
+    "tagline":"Women in asset & investment management",
+    "faviconUrl": "/favicon.ico",
+
+    "postInterval": 20,
+    "commentInterval": 20,
+    "maxPostsPerDay": 10,
+    "postsPerPage": 10,
+
+    "language": "en",
+    "locale": "en",
+
+    "cloudinaryCloudName": "city-hive",
+    "cloudinaryPresets": {
+      "avatar": "jwjlwhpy",
+      "journal": "phzzyjy0"
+    },
+    
+
+    "bev": {
+      "username": "bev"
+    },
+
+    "defaultProfileImage" : "/img/cityhive-user.png"
+
+  },
+  "AWSAccessKeyId": "AKIAJ7TIH4NITVB55PNQ",
+  "AWSSecretAccessKey": "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",
+  "AWSRegion": "eu-west-1",
+
+  "TwitterUser": "thecityhive",
+  "TwitterConsumerKey": "MrBzN0EoDpSFuUic98IC7AXzB",
+  "TwitterConsumerSecretKey": "np6rB8RKLo0LGgg5lo9kFaivty1ZFNpjRfzfQGY5VRd5hyUXSs",
+  "TwitterAccessToken": "4832145035-T7wuhYvTyXnTxfRn0Rcki5nvpYYjTlgZ9S6WNNu",
+  "TwitterAccessTokenSecret": "W9e8zNkvM52u1zLdMOQxMc6BwVkKvxbOQ7gfymnIdVLIJ",
+
+  "defaultEmail" : "admin@cityhive.co.uk",
+
+  "admin": {
+    "username": "cityadmin",
+    "email": "admin@cityhive.co.uk",
+    "password" : "admtst17",
+    "title": "mr",
+    "firstName": "Admin",
+    "lastName": "Admin"
+  },
+  "bev": {
+    "username": "bev",
+    "email": "bev@cityhive.co.uk",
+    "password" : "evUsrP7s1w6rd",
+    "title": "mrs",
+    "firstName": "Bev",
+    "lastName": "Shah"
+
+  }
+}
